@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# activates webcam with default recording settings
+
+## set resolution
+
+#v4l2-ctl --set-fmt-video=width=1920,height=1080
+#v4l2-ctl --set-fmt-video=width=720,height=480
+v4l2-ctl --set-fmt-video=width=200
+#v4l2-ctl --set-fmt-video=width=400
+
+## set camera
+
+devour \
+mpv /dev/video0 \
