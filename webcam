@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # activates webcam with default recording settings
 
